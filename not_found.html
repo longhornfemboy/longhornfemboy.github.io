@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="/.nekoweb-api/static/site.js" defer></script>
+		<script src="/.nekoweb-api/static/site.js" defer></script>
+		<meta charset="UTF-8" />
+		<title>ты че еблан?</title>
+		<link rel="icon" href="favicon.png" type="image/png" />
+
+		<script type="text/javascript">
+			var titleText = "    не найдено!    ";
+			function scrollTitle() {
+			    titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+			    document.title = titleText;
+			    setTimeout(scrollTitle, 200);
+			}
+		</script>
+
+		<style>
+			body {
+			    background-image: url('bg3.jpg');
+			    background-size: cover;
+			    background-attachment: fixed;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    margin: 0;
+			    font-family: "Segoe UI Light", "Segoe UI", Arial, sans-serif;
+			    color: #f0f0f0;
+			    text-align: center;
+			    letter-spacing: 0.5px;
+			}
+
+			nav {
+			    position: relative;
+			    padding: 25px 15px;
+			    margin-bottom: 20px;
+			    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+			    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+			    overflow: hidden;
+			    background: rgba(0, 0, 0, 0.3);
+			}
+
+			nav::before {
+			    content: "";
+			    position: absolute;
+			    top: 0; left: 0; right: 0; bottom: 0;
+			    background-image: url('assets/aero.png');
+			    background-size: auto;
+			    background-repeat: repeat-x;
+			    background-position: center;
+			    opacity: 0.4;
+			    z-index: 0;
+			}
+
+			nav a {
+			    position: relative;
+			    z-index: 1;
+			    color: white;
+			    text-decoration: none;
+			    margin: 0 20px;
+			    font-size: 18px;
+			    font-weight: bold;
+			    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+			    transition: 0.3s;
+			}
+
+			.container {
+			    max-width: 800px;
+			    margin: 100px auto;
+			    padding: 60px 20px;
+			    background: rgba(0, 0, 0, 0.4);
+			    border-radius: 30px;
+			    backdrop-filter: blur(8px);
+			    border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.status-box {
+			    position: relative;
+			    background: rgba(17, 17, 17, 0.7);
+			    border: 1px solid rgba(160, 216, 239, 0.4);
+			    border-radius: 15px;
+			    padding: 40px;
+			    display: inline-block;
+			    overflow: hidden;
+			    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+			}
+
+			.status-box::before {
+			    content: "";
+			    position: absolute;
+			    top: 0; left: 0; right: 0; bottom: 0;
+			    background-image: url('assets/aero.png');
+			    background-size: auto;
+			    background-repeat: no-repeat;
+			    background-position: center;
+			    opacity: 0.25;
+			    z-index: 0;
+			}
+
+			.content {
+			    position: relative;
+			    z-index: 1;
+			}
+
+			/* Настройка синей иконки ошибки */
+			.error-icon {
+			    width: 80px;
+			    height: 80px;
+			    margin-bottom: 20px;
+			    /* Поворачиваем цвет из красного в синий (примерно на 200 градусов) */
+			    filter: hue-rotate(200deg) brightness(1.1) drop-shadow(0 0 10px rgba(0, 162, 255, 0.5));
+			}
+
+			h1 { font-weight: lighter; font-size: 42px; margin: 0; color: #a0d8ef; }
+			p { font-size: 20px; opacity: 0.8; margin-top: 15px; }
+
+			.loader {
+			    margin: 25px auto 0;
+			    width: 40px;
+			    height: 40px;
+			    border: 3px solid rgba(160, 216, 239, 0.1);
+			    border-radius: 50%;
+			    border-top-color: #a0d8ef;
+			    animation: spin 1s ease-in-out infinite;
+			}
+
+			@keyframes spin {
+			    to { transform: rotate(360deg); }
+			}
+		</style>
+	</head>
+	<body onload="scrollTitle()">
+		<nav>
+			<a href="index.html">главная</a>
+			<a href="about.html">обо мне</a>
+			<a href="projects.html">проекты</a>
+			<a href="guestbook.html">гостевая</a>
+		</nav>
+
+		<div class="container">
+			<div class="status-box">
+				<div class="content">
+					<img
+						src="https://www.rw-designer.com/icon-image/653-256x256x32.png"
+						alt="error"
+						class="error-icon"
+					/>
+					<h1>ошибка 404</h1>
+					<p>
+						упс.. страница не найдена!
+						<br />
+						проверь адресную строку. может, страницы не было или она
+						была перенесена
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
