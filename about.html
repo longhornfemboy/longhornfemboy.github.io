@@ -1,285 +1,284 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<title>обо мне - китик</title>
-		<link rel="icon" href="favicon.png" type="image/png" />
+    <head>
+        <meta charset="UTF-8" />
+        <title>обо мне - китик</title>
+        <link rel="icon" href="favicon.png" type="image/png" />
 
-		<script type="text/javascript">
-			var titleText = "    про меня))    ";
-			function scrollTitle() {
-			    titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
-			    document.title = titleText;
-			    setTimeout(scrollTitle, 200);
-			}
-		</script>
+        <script type="text/javascript">
+            var titleText = "    pro menya))    ";
+            function scrollTitle() {
+                titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+                document.title = titleText;
+                setTimeout(scrollTitle, 200);
+            }
+        </script>
 
-		<style>
-			body {
-			    background-image: url('bg3.jpg');
-			    background-size: cover;
-			    background-attachment: fixed;
-			    background-position: center;
-			    background-repeat: no-repeat;
-			    margin: 0;
-			    font-family: "Segoe UI Light", "Segoe UI", Arial, sans-serif;
-			    color: #f0f0f0;
-			    text-align: center;
-			    letter-spacing: 0.5px;
-			}
+        <style>
+            body {
+                background-image: url('bg3.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0;
+                font-family: "Segoe UI Light", "Segoe UI", Arial, sans-serif;
+                color: #f0f0f0;
+                text-align: center;
+                letter-spacing: 0.5px;
+            }
 
-			/* навигация с полупрозрачным фоном */
-			nav {
-			    position: relative;
-			    padding: 25px 15px;
-			    margin-bottom: 20px;
-			    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-			    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-			    overflow: hidden;
-			    background: rgba(0, 0, 0, 0.3);
-			}
+            /* навигация с полупрозрачным фоном */
+            nav {
+                position: relative;
+                padding: 25px 15px;
+                margin-bottom: 20px;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+                overflow: hidden;
+                background: rgba(0, 0, 0, 0.3);
+            }
 
-			nav::before {
-			    content: "";
-			    position: absolute;
-			    top: 0; left: 0; right: 0; bottom: 0;
-			    background-image: url('assets/aero.png');
-			    background-size: auto;
-			    background-repeat: repeat-x;
-			    background-position: center;
-			    opacity: 0.4;
-			    z-index: 0;
-			}
+            nav::before {
+                content: "";
+                position: absolute;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background-image: url('assets/aero.png');
+                background-size: auto;
+                background-repeat: repeat-x;
+                background-position: center;
+                opacity: 0.4;
+                z-index: 0;
+            }
 
-			nav a {
-			    position: relative;
-			    z-index: 1;
-			    color: white;
-			    text-decoration: none;
-			    margin: 0 20px;
-			    font-size: 18px;
-			    font-weight: bold;
-			    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-			    transition: 0.3s;
-			}
+            nav a {
+                position: relative;
+                z-index: 1;
+                color: white;
+                text-decoration: none;
+                margin: 0 20px;
+                font-size: 18px;
+                font-weight: bold;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+                transition: 0.3s;
+            }
 
-			nav a:hover {
-			    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-			    opacity: 0.8;
-			}
+            nav a:hover {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+                opacity: 0.8;
+            }
 
-			.container {
-			    max-width: 900px;
-			    margin: 0 auto;
-			    padding: 40px 20px;
-			    background: rgba(0, 0, 0, 0.4);
-			    border-radius: 30px;
-			    backdrop-filter: blur(5px);
-			    margin-bottom: 50px;
-			}
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 40px 20px;
+                background: rgba(0, 0, 0, 0.4);
+                border-radius: 30px;
+                backdrop-filter: blur(5px);
+                margin-bottom: 50px;
+            }
 
-			h1 { font-weight: lighter; font-size: 52px; text-shadow: 0 0 15px rgba(255, 255, 255, 0.2); margin-bottom: 10px; }
-			h2 { font-weight: lighter; font-size: 30px; color: #a0d8ef; margin-top: 40px; border-bottom: 1px solid rgba(160, 216, 239, 0.3); display: inline-block; padding-bottom: 5px; }
-			h3 { font-weight: lighter; font-size: 19px; line-height: 1.8; text-align: left; max-width: 700px; margin: 20px auto; }
+            h1 { font-weight: lighter; font-size: 52px; text-shadow: 0 0 15px rgba(255, 255, 255, 0.2); margin-bottom: 10px; }
+            h2 { font-weight: lighter; font-size: 30px; color: #a0d8ef; margin-top: 40px; border-bottom: 1px solid rgba(160, 216, 239, 0.3); display: inline-block; padding-bottom: 5px; }
+            h3 { font-weight: lighter; font-size: 19px; line-height: 1.8; text-align: left; max-width: 700px; margin: 20px auto; }
 
-			/* сетка для соцсетей */
-			.social-grid {
-			    display: flex;
-			    justify-content: center;
-			    gap: 20px;
-			    flex-wrap: wrap;
-			    margin-top: 20px;
-			}
+            /* сетка для соцсетей */
+            .social-grid {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
 
-			.social-card {
-			    background: rgba(255, 255, 255, 0.1);
-			    padding: 15px 25px;
-			    border-radius: 15px;
-			    text-decoration: none;
-			    color: white;
-			    transition: 0.3s;
-			    border: 1px solid rgba(255, 255, 255, 0.1);
-			    min-width: 120px;
-			}
+            .social-card {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 15px 25px;
+                border-radius: 15px;
+                text-decoration: none;
+                color: white;
+                transition: 0.3s;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                min-width: 120px;
+            }
 
-			.social-card:hover {
-			    background: rgba(255, 255, 255, 0.2);
-			    transform: translateY(-5px);
-			    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-			}
+            .social-card:hover {
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            }
 
-			/* блок с техникой */
-			.specs-box {
-			    position: relative;
-			    padding: 20px;
-			    margin: 20px auto;
-			    border-radius: 15px;
-			    background: rgba(17, 17, 17, 0.5);
-			    border: 1px solid rgba(255, 255, 255, 0.1);
-			    overflow: hidden;
-			    color: white;
-			}
+            /* блок с техникой */
+            .specs-box {
+                position: relative;
+                padding: 20px;
+                margin: 20px auto;
+                border-radius: 15px;
+                background: rgba(17, 17, 17, 0.5);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                overflow: hidden;
+                color: white;
+            }
 
-			.specs-box::before {
-			    content: "";
-			    position: absolute;
-			    top: 0;
-			    left: 0;
-			    right: 0;
-			    bottom: 0;
-			    background-image: url('assets/aero.png');
-			    background-size: auto;
-			    background-repeat: repeat-x;
-			    background-position: center;
-			    opacity: 0.3;
-			    z-index: 0;
-			}
+            .specs-box::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url('assets/aero.png');
+                background-size: auto;
+                background-repeat: repeat-x;
+                background-position: center;
+                opacity: 0.3;
+                z-index: 0;
+            }
 
-			.specs-box ul {
-			    position: relative;
-			    z-index: 1;
-			    list-style: none;
-			    padding: 0;
-			    text-align: left;
-			    max-width: 600px;
-			    margin: 0 auto;
-			}
+            .specs-box ul {
+                position: relative;
+                z-index: 1;
+                list-style: none;
+                padding: 0;
+                text-align: left;
+                max-width: 600px;
+                margin: 0 auto;
+            }
 
-			.specs-box li {
-			    margin-bottom: 10px;
-			    font-size: 18px;
-			    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
-			}
+            .specs-box li {
+                margin-bottom: 10px;
+                font-size: 18px;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+            }
 
-			ul { list-style: none; padding: 0; text-align: left; max-width: 600px; margin: 0 auto; }
-			li { margin-bottom: 10px; font-size: 18px; }
-			li b { color: #a0d8ef; }
-		</style>
-	</head>
+            ul { list-style: none; padding: 0; text-align: left; max-width: 600px; margin: 0 auto; }
+            li { margin-bottom: 10px; font-size: 18px; }
+            li b { color: #a0d8ef; }
+        </style>
+    </head>
 
-	<body onload="scrollTitle()">
-		<nav>
-			<a href="index.html">главная</a>
-			<a href="about.html">обо мне</a>
-			<a href="projects.html">проекты</a>
-			<a href="guestbook.html">гостевая</a>
-		</nav>
+    <body onload="scrollTitle()">
+        <nav>
+            <a href="index.html">главная</a>
+            <a href="about.html">обо мне</a>
+            <a href="projects.html">проекты</a>
+            <a href="guestbook.html">гостевая</a>
+        </nav>
 
-		<div class="container">
-			<h1>привет, я артём :D</h1>
-			<h3>
-				я независимый разработчик, контент-мейкер и основатель
-				интернет-канала
-				<b>alpha</b>
-				. увлекаюсь эстетикой старых операционных систем, таких как
-				windows xp и vista, и стараюсь перенести этот уют в современный
-				веб.
-			</h3>
+        <div class="container">
+            <h1>привет, я артём :D</h1>
+            <h3>
+                я независимый разработчик, контент-мейкер и основатель
+                интернет-канала
+                <b>alpha</b>
+                . увлекаюсь эстетикой старых операционных систем, таких как
+                windows xp и vista, и стараюсь перенести этот уют в современный
+                веб.
+            </h3>
 
-			<h2>соцсети и связь</h2>
-			<div class="social-grid">
-				<a href="https://t.me/@k1t1kofficial7" class="social-card">
-					telegram
-				</a>
-				<a href="https://emb.faero.top/k1t1k_ember" class="social-card">
-					ember
-				</a>
-				<a href="#" class="social-card">youtube</a>
-				<a href="#" class="social-card">discord</a>
-			</div>
+            <h2>соцсети и связь</h2>
+            <div class="social-grid">
+                <a href="https://t.me/@k1t1kofficial7" class="social-card">
+                    telegram
+                </a>
+                <a href="https://emb.faero.top/k1t1k_ember" class="social-card">
+                    ember
+                </a>
+                <a href="#" class="social-card">youtube</a>
+                <a href="#" class="social-card">discord</a>
+            </div>
 
-			<h2>чем я занимаюсь</h2>
-			<h3>
-				• развиваю свой интернет-канал
-				<b>alpha</b>
-				и координирую работу команды.
-				<br />
-				• пишу код на
-				<b>python</b>
-				и верстаю ламповые сайты на
-				<b>html/css</b>
-				.
-				<br />
-				• создаю уникальные виджеты для стримов в obs и занимаюсь
-				цифровым рисованием.
-				<br />
-				• коллекционирую и восстанавливаю старое железо, давая ему
-				вторую жизнь.
-			</h3>
+            <h2>чем я занимаюсь</h2>
+            <h3>
+                • развиваю свой интернет-канал
+                <b>alpha</b>
+                и координирую работу команды.
+                <br />
+                • пишу код на
+                <b>python</b>
+                и верстаю ламповые сайты на
+                <b>html/css</b>
+                .
+                <br />
+                • создаю уникальные виджеты для стримов в obs и занимаюсь
+                цифровым рисованием.
+                <br />
+                • коллекционирую и восстанавливаю старое железо, давая ему
+                вторую жизнь.
+            </h3>
 
-			<h2>от чего я фанатею</h2>
-			<h3>
-				меня дико прет от
-				<b>скевоморфизма</b>
-				и интерфейсов эпохи 2000-х. windows vista с её aero, стеклянные
-				кнопки, глубокие тени и глянцевые иконки — это мой главный
-				источник вдохновения. ещё я просто обожаю
-				<b>lucky star</b>
-				, коната изуми — ну типичный я. также фанатею от истории
-				мобильных технологий и старых девайсов.
-			</h3>
+            <h2>от чего я фанатею</h2>
+            <h3>
+                меня дико прет от
+                <b>скевоморфизма</b>
+                и интерфейсов эпохи 2000-х. windows vista с её aero, стеклянные
+                кнопки, глубокие тени и глянцевые иконки — это мой главный
+                источник вдохновения. ещё я просто обожаю
+                <b>lucky star</b>
+                , коната изуми — ну типичный я. также фанатею от истории
+                мобильных технологий и старых девайсов.
+            </h3>
 
-			<img
-				src="https://i.pinimg.com/736x/dd/97/d0/dd97d0e8e7d50d980f617b1aa62e5d72.jpg"
-				style="display: block; margin: 20px auto; max-width: 300px;"
-			/>
+            <img
+                src="https://i.pinimg.com/736x/dd/97/d0/dd97d0e8e7d50d980f617b1aa62e5d72.jpg"
+                style="display: block; margin: 20px auto; max-width: 300px;"
+            />
 
-			<h2>что мне нравится</h2>
-			<h3>
-				•
-				<b>музыка:</b>
-				обожаю старый добрый синтвейв и лоу-фай, которые идеально
-				подходят для кодинга. ещё мне нравятся такие исполнители как
-				сектор газа и лемон демон.
-				<br />
-				•
-				<b>эстетика:</b>
-				ночной город, свет от элт-мониторов и шум старых жестких дисков.
-				<br />
-				•
-				<b>творчество:</b>
-				процесс превращения пустой страницы кода в работающий интерфейс.
-				<br />
-				•
-				<b>атмосфера:</b>
-				уютные вечера за просмотром любимого аниме или изучением редких
-				девайсов.
-			</h3>
+            <h2>что мне нравится</h2>
+            <h3>
+                •
+                <b>музыка:</b>
+                обожаю старый добрый синтвейв и лоу-фай, которые идеально
+                подходят для кодинга. ещё мне нравятся такие исполнители как
+                сектор газа и лемон демон.
+                <br />
+                •
+                <b>эстетика:</b>
+                ночной город, свет от элт-мониторов и шум старых жестких дисков.
+                <br />
+                •
+                <b>творчество:</b>
+                процесс превращения пустой страницы кода в работающий интерфейс.
+                <br />
+                •
+                <b>атмосфера:</b>
+                уютные вечера за просмотром любимого аниме или изучением редких
+                девайсов.
+            </h3>
 
-			<h2>мой "железный" уголок</h2>
-			<div class="specs-box">
-				<ul>
-					<li>
-						<b>основной пк:</b>
-						acer aspire e5-722g (amd a6, radeon r5, 500gb hdd)
-					</li>
-					<li>
-						<b>мониторы:</b>
-						встроенный tn 1080p + дополнительный oled 1080p
-					</li>
-					<li>
-						<b>телефоны:</b>
-						samsung galaxy grand prime (2014), iphone xs, vivo iqoo
-						z9 turbo
-					</li>
-					<li>
-						<b>ретро:</b>
-						коллекция dvd-плееров bbk (модели dv611si и dv118si)
-					</li>
-				</ul>
-			</div>
+            <h2>мой "железный" уголок</h2>
+            <div class="specs-box">
+                <ul>
+                    <li>
+                        <b>основной пк:</b>
+                        acer aspire e5-722g (amd a6, radeon r5, 500gb hdd)
+                    </li>
+                    <li>
+                        <b>мониторы:</b>
+                        встроенный tn 1080p + дополнительный oled 1080p
+                    </li>
+                    <li>
+                        <b>телефоны:</b>
+                        samsung galaxy grand prime ve (lineageos 13.0, android 6.0.1), iphone xs, vivo iqoo z9 turbo
+                    </li>
+                    <li>
+                        <b>ретро:</b>
+                        коллекция dvd-плееров bbk (модели dv611si и dv118si)
+                    </li>
+                </ul>
+            </div>
 
-			<h2>немного фактов</h2>
-			<h3>
-				• живу во владимирской области.
-				<br />
-				• обожаю рисовать и изучать историю старых девайсов.
-				<br />
-				• веду свой интернет-канал alpha вместе с крутой командой.
-				<br />
-				• мой ник "китик" связан с украинским словом "кiт", что означает
-				кот
-			</h3>
-		</div>
-	</body>
+            <h2>немного фактов</h2>
+            <h3>
+                • живу во владимирской области.
+                <br />
+                • обожаю рисовать и изучать историю старых девайсов.
+                <br />
+                • веду свой интернет-канал alpha вместе с крутой командой.
+                <br />
+                • мой ник "китик" связан с украинским словом "кiт", что означает
+                кот
+            </h3>
+        </div>
+    </body>
 </html>
